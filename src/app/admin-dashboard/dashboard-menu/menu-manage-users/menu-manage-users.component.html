@@ -1,0 +1,35 @@
+<div>
+  <button (click)="goBack()">Back</button>
+</div>
+
+<div *ngIf="successMessage" style="color: green;">{{ successMessage }}</div>
+<div *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Role</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td><input type="text" [(ngModel)]="user.firstName" /></td>
+      <td><input type="text" [(ngModel)]="user.lastName" /></td>
+      <td><input type="text" [(ngModel)]="user.email" /></td>
+      <td><input type="text" [(ngModel)]="user.password" /></td>
+      <td>{{ user.role }}</td> 
+      <td>{{ user.active ? 'Active' : 'Deactivated' }}</td>
+      <td>
+        <button (click)="updateUser(user._id, user)">Update</button>
+        <button (click)="deleteUser(user._id)">Delete</button>
+        <button (click)="handleDeactivate(user._id)">Deactivate</button>
+        <button (click)="handleActivate(user._id)">Reactivate</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

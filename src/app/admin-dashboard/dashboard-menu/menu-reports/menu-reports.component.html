@@ -1,0 +1,31 @@
+<div class="container">
+  <button (click)="goBack()">Back</button>
+</div>
+
+<div *ngIf="report" class="container">
+  <h2>Admin Report</h2>
+
+  <div class="report-section">
+    <p>Number of All Members: {{ report.numberOfMembers }}</p>
+    <p>Number of All Librarians: {{ report.numberOfLibrarians }}</p>
+    <p>Number of All Administrators: {{ report.numberOfAdmins }}</p>
+  </div>
+
+  
+
+  <div class="report-section">
+    <p>Number of Active Members: {{ report.numberOfActiveMembers }}</p>
+    <p>Number of Active Librarians: {{ report.numberOfActiveLibrarians }}</p>
+    <p>Number of Active Administrators: {{ report.numberOfActiveAdmins }}</p>
+  </div>
+
+  <h3>Most Checked Out Books</h3>
+<div *ngIf="report.mostCheckedOutBooks" class="report-section">
+  <div *ngFor="let book of report.mostCheckedOutBooks">
+    <p>name: {{ book.name }}</p>
+    <p>Title: {{ book.title }}</p>
+    <p>Checked Out Count: {{ book.checkedOut }}</p>
+  </div>
+</div>
+
+</div>

@@ -1,0 +1,80 @@
+/* Reset default browser styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styles */
+  div {
+   
+    padding: 20px;
+  
+  }
+  
+  /* Heading styles */
+  h1, h2 {
+    color: #1877f2; /* Facebook blue */
+  }
+  
+  /* Navigation styles */
+ul {
+    list-style-type: none;
+    padding: 10px 0;
+    border-bottom: 2px solid #1877f2; /* Facebook blue */
+  }
+  
+  ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #1877f2; /* Facebook blue */
+    font-weight: bold;
+    border-bottom: 2px solid transparent; /* Initially transparent border */
+  }
+  
+  ul li a:hover {
+    border-bottom-color: #1877f2; /* Facebook blue on hover */
+  }
+  
+  /* Make the last item not have a margin */
+  ul li:last-child {
+    margin-right: 0;
+  }
+  
+  /* Book list styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  /* Alternate row color */
+  tbody tr:nth-child(even) {
+    background-color: #f6f8fa; /* Facebook background color */
+  }
+  
+  /* Hover effect for table rows */
+  tbody tr:hover {
+    background-color: #f0f2f5; /* Facebook hover color */
+  }
+
+  .equal-images {
+    display: flex;
+  }
+  
+  .equal-images img {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    object-fit: cover;
+    margin-right: 10px; /* Optional: Add spacing between images */
+  }
+  

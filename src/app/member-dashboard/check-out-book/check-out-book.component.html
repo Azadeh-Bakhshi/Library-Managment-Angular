@@ -1,0 +1,24 @@
+<div>
+    <button (click)="goBack()">Back</button>
+    <h1>Check Out Book</h1>
+    <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Title</th>
+          <th>Entity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books">
+          <td>{{ book.name }}</td>
+          <td>{{ book.title }}</td>
+          <td>{{ book.entity }}</td>
+          <td><button (click)="handleCheckOut(book._id)">Check Out</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

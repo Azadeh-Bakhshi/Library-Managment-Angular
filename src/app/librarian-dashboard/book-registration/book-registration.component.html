@@ -1,0 +1,24 @@
+<div>
+  <button (click)="goBack()">Back</button>
+</div>
+
+<div class="book-registration">
+  <h2>Book Registration</h2>
+  <div *ngIf="registrationError" class="error">{{ registrationError }}</div>
+  <div *ngIf="registrationSuccess" class="success">{{ registrationSuccess }}</div>
+  <form (ngSubmit)="registerBook()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="name" required>
+    </div>
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" [(ngModel)]="title" required>
+    </div>
+    <div class="form-group">
+      <label for="entity">Entity:</label>
+      <input type="number" id="entity" name="entity" [(ngModel)]="entity" required>
+    </div>
+    <button type="submit">Register Book</button>
+  </form>
+</div>

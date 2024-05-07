@@ -1,0 +1,35 @@
+<div>
+  <button (click)="goBack()">Back</button>
+
+  <h2>Checkout History</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Checkout Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let record of checkoutHistory">
+        <td>{{ record.name }}</td>
+        <td>{{ record.checkoutTime | date: 'medium' }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Return History</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Return Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let record of returnHistory">
+        <td>{{ record.name }}</td>
+        <td>{{ record.returnTime | date: 'medium' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

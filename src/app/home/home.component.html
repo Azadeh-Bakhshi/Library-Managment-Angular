@@ -1,0 +1,41 @@
+<div>
+  <h1>Welcome to Public Page</h1>
+  <ul>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/registration">Registration</a></li>
+  </ul>
+
+  <h2>Most Checked Out Book</h2>
+  <div >
+  <ng-container *ngIf="mostCheckedOutBook">
+    <div class="book-details" *ngFor="let book of mostCheckedOutBook">
+      <p>Name: {{ book.name }}</p>
+      <p>Title: {{ book.title }}</p>
+      
+    </div>
+  </ng-container>
+</div>
+
+  <h2>Books list</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Book Name</th>
+        <th>Book Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.name }}</td>
+        <td>{{ book.title }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="equal-images">
+    <img src="https://cdn.dribbble.com/users/8385793/screenshots/20570435/media/f29ac400383de50b43572754501d2dbf.jpg?resize=768x576&vertical=center" alt="Book Image 1" style="width: 420px; height: 420px; object-fit: cover;" />
+    <img src="https://cdn.dribbble.com/userupload/4091443/file/original-c23c898a022cac66e0019d29f42fdbe9.jpg?resize=1024x768" alt="Book Image 2" style="width: 420px; height: 420px; object-fit: cover;" />
+    <img src="https://cdn.dribbble.com/userupload/11470448/file/original-6d6e74fef8aed356a6567ebc4935c8a0.jpg?resize=1024x737" alt="Book Image 3" style="width: 420px; height: 420px; object-fit: cover;" />
+  </div>
+  
+</div>

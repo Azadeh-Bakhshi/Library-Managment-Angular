@@ -1,0 +1,31 @@
+<div>
+    <button (click)="goBack()">Back</button>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let librarian of librarianData">
+        <td><input type="text" [(ngModel)]="librarian.firstName" /></td>
+        <td><input type="text" [(ngModel)]="librarian.lastName" /></td>
+        <td><input type="text" [(ngModel)]="librarian.email" /></td>
+        <td><input type="text" [(ngModel)]="librarian.password" /></td>
+        <td>
+          <button (click)="handleSubmit(librarian)">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="modalOpen">
+    <h2>Success</h2>
+    <p>{{ successMessage }}</p>
+    <button (click)="handleCloseModal()">Close</button>
+  </div>
+  

@@ -1,0 +1,26 @@
+.menu {
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 10px;
+  }
+  
+  ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add some space between list items */
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Default text color */
+    font-weight: bold; /* Make text bold */
+  }
+  
+  a:hover {
+    color: #007bff; /* Change text color on hover */
+  }
+  

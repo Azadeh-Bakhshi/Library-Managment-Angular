@@ -1,0 +1,69 @@
+/* Style for the container div */
+div {
+    font-family: Arial, sans-serif; /* Set font family */
+  }
+  
+  /* Style for the back button */
+  div button {
+    padding: 8px 16px; /* Add padding */
+    background-color: #007bff; /* Set background color to blue */
+    color: #fff; /* Set text color to white */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-bottom: 16px; /* Add bottom margin */
+  }
+  
+  /* Style for the heading */
+  div h1 {
+    color: #333; /* Set text color */
+    margin-bottom: 16px; /* Add bottom margin */
+  }
+  
+  /* Style for the table */
+  div table {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse; /* Collapse table borders */
+  }
+  
+  /* Style for table headers */
+  div th {
+    background-color: #f0f0f0; /* Set background color */
+    padding: 12px 16px; /* Add padding */
+    text-align: left; /* Align text to the left */
+    border-bottom: 2px solid #ddd; /* Add bottom border */
+  }
+  
+  /* Style for table cells */
+  div td {
+    padding: 12px 16px; /* Add padding */
+    border-bottom: 1px solid #ddd; /* Add bottom border */
+  }
+  
+  /* Style for actions column */
+  div td button {
+    padding: 8px 16px; /* Add padding */
+    background-color: #dc3545; /* Set background color to red */
+    color: #fff; /* Set text color to white */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Style for actions column buttons on hover */
+  div td button:hover {
+    background-color: #c82333; /* Darken background color on hover */
+  }
+  
+  /* Style for success message */
+  div div[style="color: green;"] {
+    color: green; /* Set text color to green */
+    margin-top: 16px; /* Add top margin */
+  }
+  
+  /* Style for error message */
+  div div[style="color: red;"] {
+    color: red; /* Set text color to red */
+    margin-top: 16px; /* Add top margin */
+  }
+  

@@ -1,0 +1,64 @@
+/* Style for the back button */
+div:first-child button {
+    margin-bottom: 20px;
+    background-color: blue; /* Change button background color to blue */
+    color: white; /* Change button text color to white */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Adjust button padding */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer;
+  }
+  
+  /* Style for the back button on hover */
+  div:first-child button:hover {
+    background-color: darkblue; /* Darken button background color on hover */
+  }
+  
+  /* Style for the main content */
+  div:last-child {
+    margin-top: 20px; /* Add top margin to separate from the back button */
+  }
+  
+  /* Style for the headings */
+  div:last-child h2 {
+    font-size: 24px; /* Adjust heading font size */
+    margin-bottom: 10px; /* Add bottom margin to separate from the hr */
+  }
+  
+  div:last-child hr {
+    border: none; /* Remove default hr border */
+    border-top: 1px solid #ccc; /* Add custom border on top */
+    margin-bottom: 20px; /* Add bottom margin */
+  }
+  
+  div:last-child h3 {
+    font-size: 20px; /* Adjust sub-heading font size */
+    margin-bottom: 10px; /* Add bottom margin */
+  }
+  
+  /* Style for the book list */
+  div:last-child ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Style for each book item */
+  div:last-child li {
+    margin-bottom: 10px; /* Add bottom margin between book items */
+  }
+  
+  /* Style for the delete and update buttons */
+  div:last-child li button {
+    background-color: #f44336; /* Set button background color */
+    color: white; /* Set button text color to white */
+    border: none; /* Remove button border */
+    padding: 8px 12px; /* Adjust button padding */
+    margin-left: 5px; /* Add left margin between buttons */
+    cursor: pointer;
+  }
+  
+  /* Style for the delete and update buttons on hover */
+  div:last-child li button:hover {
+    background-color: #d32f2f; /* Darken button background color on hover */
+  }
+  

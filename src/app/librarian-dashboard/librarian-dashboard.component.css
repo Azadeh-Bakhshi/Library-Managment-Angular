@@ -1,0 +1,25 @@
+.menu {
+    font-family: Arial, sans-serif;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    display: block; /* Change display to block */
+  }
+  
+  .menu ul li a {
+    display: block; /* Change display to block */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #0609db; /* Change the color as needed */
+  }
+  
+  .menu ul li a:hover {
+    background-color: #f0f0f0; /* Change the background color on hover as needed */
+  }
+  

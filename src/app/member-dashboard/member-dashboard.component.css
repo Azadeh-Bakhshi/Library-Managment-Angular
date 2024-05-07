@@ -1,0 +1,30 @@
+/* Style for the menu container */
+.menu {
+    font-family: Arial, sans-serif; /* Set font family */
+  }
+  
+  /* Style for the unordered list */
+  .menu ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Style for list items */
+  .menu li {
+    margin-bottom: 10px; /* Add bottom margin to separate list items */
+  }
+  
+  /* Style for anchor links */
+  .menu a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Set link color to blue */
+    display: block; /* Make links block-level elements for better spacing */
+    padding: 8px 0; /* Add padding to top and bottom */
+    transition: color 0.3s; /* Add transition effect for color change */
+  }
+  
+  /* Style for anchor links on hover */
+  .menu a:hover {
+    color: #0056b3; /* Darken link color on hover */
+  }
+  

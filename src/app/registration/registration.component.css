@@ -1,0 +1,65 @@
+/* Overall styling for the registration page */
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif; /* Use Arial font */
+  }
+  
+  /* Style for the registration form container */
+  .registration-container {
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    width: 400px; /* Fixed width */
+  }
+  
+  /* Style for the registration header */
+  .registration-header {
+    color: #007bff; /* Blue color */
+    margin-bottom: 20px; /* Add space below the header */
+  }
+  
+  /* Style for form labels */
+  label {
+    display: block; /* Display labels as blocks */
+    margin-bottom: 5px; /* Add space below each label */
+  }
+  
+  /* Style for form inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: calc(100% - 12px); /* Set the width of inputs */
+    padding: 8px; /* Add padding */
+    margin-bottom: 10px; /* Add space below inputs */
+    border: 1px solid #cccccc; /* Add border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  /* Style for the registration success message */
+  .success-message {
+    background-color: #d4edda; /* Light green background */
+    padding: 10px; /* Add padding */
+    margin-top: 20px; /* Add space above the message */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  /* Style for the OK button in the success message */
+  .success-message button {
+    background-color: #28a745; /* Green button background */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove border */
+    padding: 8px 16px; /* Add padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  /* Hover effect for the OK button */
+  .success-message button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  

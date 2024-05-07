@@ -1,0 +1,30 @@
+<div>
+  <button (click)="goBack()">Back</button>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let admin of adminData">
+      <td><input type="text" [(ngModel)]="admin.firstName" /></td>
+      <td><input type="text" [(ngModel)]="admin.lastName" /></td>
+      <td><input type="text" [(ngModel)]="admin.email" /></td>
+      <td><input type="text" [(ngModel)]="admin.password" /></td>
+      <td>
+        <button (click)="handleSubmit(admin)">Update</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div *ngIf="modalOpen">
+  <h2>Success</h2>
+  <p>{{ successMessage }}</p>
+  <button (click)="handleCloseModal()">Close</button>
+</div>
