@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import { environment } from '../environments/environment';
+
+const authorizationToken = environment.authorization;
 
 interface UserReport {
   numberOfMembers: number;
@@ -34,7 +37,7 @@ export class AuthService {
 
   async login(email: string, password: string, role: string): Promise<any> {
     const myHeaders = new Headers();
-    myHeaders.append("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTM5MTg4NzJkYzkyMDIwNzZjZGJmZiIsInVzZXJuYW1lIjoiMDAyNzQ4NjAwIiwiaWF0IjoxNzEyOTc5OTMzLCJleHAiOjE3MTUxMzk5MzN9.0-JLh0-J35WJ-7Z6bD2Rw0GFUsn67d8X8mnWSwRF_Xg");
+    myHeaders.append("Authorization", authorizationToken);
     const requestOptions: RequestInit = {
       method: 'GET',
       headers: myHeaders
